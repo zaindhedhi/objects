@@ -7,17 +7,22 @@
 // delete obj.age
 // console.log(obj)
 
-let user = {
-    name: "usman",
-    email:"mabdullah2037@gmail.com",
-    hobbies: ["swimming"],
-    greetUser : function (){
-        console.log(this.name);
-    }
-}
-user.greetUser()
+// let user = {
+//     name: "usman",
+//     email:"mabdullah2037@gmail.com",
+//     hobbies: ["swimming"],
+//     greetUser : function (){
+//         console.log(this.name);
+//     }
+// }
+// user.greetUser()
+
+// function hello (abc){
+//     console.log(abc);
+//     console.log(abc.innerHTML);
 
 
+// }
 
 // let nestedData = [
 //     {
@@ -72,7 +77,7 @@ user.greetUser()
 
 
 
-const products = [
+let products = [
     { name: "Laptop", price: 1000 },
     { name: "Smartphone", price: 600 },
     { name: "Tablet", price: 400 },
@@ -85,10 +90,16 @@ const products = [
     { name: "External Hard Drive", price: 120 }
 ];
 
-let div = document.querySelector('#new')
-for(let i = 0; i > products.length; i++){
-    div.innerHTML += `<h1> Name ${products[i].name}</h1>
+let div = document.querySelector('div')
+
+for(let i = 0; i < products.length; i++){
+    console.log(products[i])
+    div.innerHTML += `
+    <h1>Name : ${products[i].name}</h1>
+    <h1>Price : ${products[i].price}</h1>
+    <hr  />
     `
+  
 }
 
 
