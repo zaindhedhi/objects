@@ -4,8 +4,18 @@
 
 
 // }
-// console.log(obj.userName)
+// delete obj.age
+// console.log(obj)
 
+let user = {
+    name: "usman",
+    email:"mabdullah2037@gmail.com",
+    hobbies: ["swimming"],
+    greetUser : function (){
+        console.log(this.name);
+    }
+}
+user.greetUser()
 
 
 
